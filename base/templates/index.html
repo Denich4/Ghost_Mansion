@@ -1,0 +1,37 @@
+{% load static %}
+
+
+{% block content %}
+    <style>
+        body{
+            background: url(../static/boo2.png);
+        }
+
+        .container{
+            margin: 0 auto;
+            width: 1140px;
+        }
+
+       .links{
+            display: block;
+            width: 508px;   
+            margin: 0 auto;
+            margin-top: 300px;  
+        }
+
+        .win{
+            display: block;
+            margin-bottom: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+            <div class="links">
+                <a class="win" href="https://disk.yandex.ru/d/GMSg0Z4ZW_PTHA"><img src="{% static  'win.png' %}" alt=""></a>
+                <a class="lin" href="https://disk.yandex.ru/d/bYZ8j9zlfcB38g"><img src="{% static  'lin.png' %}" alt=""></a>
+            </div>
+    </div>
+</body>
+</html>
+{% endblock content %}
